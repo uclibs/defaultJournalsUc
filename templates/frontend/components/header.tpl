@@ -27,13 +27,13 @@
 	<div class="pkp_structure_page">
 
 		{* Header *}
-		<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+    <header class="pkp_structure_head" id="headerNavigationContainer" role="banner" style="background: #e00122 url('{$baseUrl}/plugins/themes/defaultJournalsUc/templates/images/uc-press-header-background.png') no-repeat bottom center; background-size: cover;">
 			{* Skip to content nav links *}
 			{include file="frontend/components/skipLinks.tpl"}
 
 			<div class="pkp_head_wrapper">
 
-				<div class="pkp_site_name_wrapper">
+				<div>
 					<button class="pkp_site_nav_toggle">
 						<span>Open Menu</span>
 					</button>
@@ -72,6 +72,11 @@
 					{load_menu name="primary" id="navigationPrimary" ulClass="pkp_navigation_primary"}
 				{/capture}
 
+
+
+
+
+
 				<nav class="pkp_site_nav_menu" aria-label="{translate|escape key="common.navigation.site"}">
 					<a id="siteNav"></a>
 					<div class="pkp_navigation_primary_row">
@@ -83,8 +88,19 @@
 					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
 						{load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}
 					</div>
+
+
+
+
+
 				</nav>
 			</div><!-- .pkp_head_wrapper -->
+						{* Search form *}
+							<div class='search-bar'>
+								{include file="templates/frontend/components/searchForm_simple.tpl"}
+							</div>
+
+
 		</header><!-- .pkp_structure_head -->
 
 		{* Wrapper for page content and sidebars *}
