@@ -16,3 +16,9 @@ msgstr "Journals@UC Homepage Theme"
 
 msgid "plugins.themes.defaultJournalsUc.description"
 msgstr "A custom homepage theme for Journals@UC."
+
+msgid "plugins.themes.defaultJournalsUc.option.proceedingsArray.label"
+msgstr "Proceedings Column"
+
+msgid "plugins.themes.defaultJournalsUc.option.proceedingsArray.description"
+msgstr "Add comma delimited journal IDs to populate the proceedings column on the home page."
