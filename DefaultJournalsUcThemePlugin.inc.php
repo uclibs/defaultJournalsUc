@@ -36,6 +36,12 @@ class DefaultJournalsUcThemePlugin extends ThemePlugin {
 			$this->removeOption('typography');
 		}
 
+		$this->addOption('proceedingsArray', 'FieldText', [
+			'label' => __('plugins.themes.defaultJournalsUc.option.proceedingsArray.label'),
+			'description' => __('plugins.themes.defaultJournalsUc.option.proceedingsArray.description'),
+			'default' => ''
+		]);
+
 		// Load the Montserrat and Open Sans fonts
 		$this->addStyle(
 			'font',
@@ -63,7 +69,21 @@ class DefaultJournalsUcThemePlugin extends ThemePlugin {
 		// ignore those added by the parent theme. This gets rid of @font
 		// variable overrides from the typography option
 		$additionalLessVariables = array();
+
+
+    $proceedings = $this->getOption('proceedingsArray');
+    HookRegistry::register ('TemplateManager::display', array($this, 'loadTemplateData'));
+
   }
+  	public function loadTemplateData($hookName, $args) {
+			// Retrieve the TemplateManager and the template filename
+			$templateMgr = $args[0];
+			$template = $args[1];
+			// Don't do anything if we're not loading the right template
+      $proceedingsArray = explode(",", $this->getOption('proceedingsArray'));
+  		$templateMgr->assign('proceedings', $proceedingsArray);
+		}
+
 
 	/**
 	 * Get the display name of this plugin
