@@ -32,7 +32,7 @@
 <div class="column">
                     <p><a href="{$baseUrl}">Journals@UC Terms of Use</a></p>
                     <p><a href="https://www.uc.edu/alert.html">UC Alerts</a></p>
-                    <p><a href="https://commercialization.uc.edu/copyright-infringement">Copyright Information &copy; 2017 University of Cincinnati</a></p>
+                    <p><a href="https://commercialization.uc.edu/copyright-infringement">Copyright Information &copy; {$smarty.now|date_format:"%Y"} University of Cincinnati</a></p>
 </div>
 <div class="column">
                     <p><a href="http://uc.edu/about/policies/non-discrimination.html">Notice of Non-Discrimination</a></p>
@@ -42,7 +42,7 @@
 
 		<div class="pkp_brand_footer column" role="complementary">
        <a href="https://uc.edu">
-         <img class="img-responsive footer-logo" src="{$baseUrl}/templates/images/uc/UC_ID_SecondaryWhite.png" alt="University of Cincinnati logo">
+         <img class="img-responsive footer-logo" src="{$baseUrl}/plugins/themes/defaultJournalsUc/templates/images/UC_ID_SecondaryWhite.png" alt="University of Cincinnati logo">
 			</a>
 		</div>
 	</div>
