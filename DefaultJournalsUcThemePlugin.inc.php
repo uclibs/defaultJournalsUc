@@ -36,6 +36,21 @@ class DefaultJournalsUcThemePlugin extends ThemePlugin {
 			$this->removeOption('typography');
 		}
 
+    // Remove base color option from the parent theme.
+    if (method_exists($this, 'removeOption')) {
+      $this->removeOption('baseColour');
+    }
+
+    // Remove show description in journal index option from the parent theme.
+    if (method_exists($this, 'removeOption')) {
+      $this->removeOption('showDescriptionInJournalIndex');
+    }
+
+    // Remove home page image header  option from the parent theme.
+    if (method_exists($this, 'removeOption')) {
+      $this->removeOption('useHomepageImageAsHeader');
+    }
+
 		$this->addOption('proceedingsArray', 'FieldText', [
 			'label' => __('plugins.themes.defaultJournalsUc.option.proceedingsArray.label'),
 			'description' => __('plugins.themes.defaultJournalsUc.option.proceedingsArray.description'),
