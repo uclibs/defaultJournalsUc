@@ -30,12 +30,12 @@
 <div class="pkp_structure_footer_wrapper row" role="contentinfo">
 	<a id="pkp_content_footer"></a>
 
-<div class="column">
+<div class="footer-column">
                     <p><a href="{$baseUrl}">Journals@UC Terms of Use</a></p>
                     <p><a href="https://www.uc.edu/alert.html">UC Alerts</a></p>
                     <p><a href="https://commercialization.uc.edu/copyright-infringement">Copyright Information &copy; {$smarty.now|date_format:"%Y"} University of Cincinnati</a></p>
 </div>
-<div class="column">
+<div class="footer-column">
                     <p><a href="http://uc.edu/about/policies/non-discrimination.html">Notice of Non-Discrimination</a></p>
                     <p><a href="https://www.uc.edu/publicsafety/clery/annual-security-report.html">Clery and HEOA Notice</a></p>
                     <p><a href="https://www.uc.edu/ucit/community/accessibility/eAccessibility-form.html">eAccessibility Concern</a></p>
