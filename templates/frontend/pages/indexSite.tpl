@@ -10,13 +10,13 @@
  *
  *}
 {include file="frontend/components/header.tpl"}
-{assign var=journalsArray value=$journals->toArray()}
+{assign var='journalsArray' value=$journals}
 
 <div class="page_index_site row">
 
 	{if $about}
 		<div class="about_site">
-			{$about|nl2br}
+			{$about}
 		</div>
 	{/if}
 <hr class="red-hr">
@@ -24,7 +24,7 @@
 		<h1>
       Journals
 		</h1>
-		{if $journals->wasEmpty()}
+{if !$journals|@count}
 			{translate key="site.noJournals"}
 		{else}
 			<ul>
@@ -79,7 +79,7 @@
 		<h1>
        Proceedings
 		</h1>
-		{if $journals->wasEmpty()}
+		{if !$journals|@count}
 			{translate key="site.noJournals"}
 		{else}
 			<ul>
