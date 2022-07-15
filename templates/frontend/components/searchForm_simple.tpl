@@ -22,7 +22,7 @@
 			<input name="query" value="{$searchQuery|escape}" type="text" aria-label="{translate|escape key="common.searchQuery"}">
 		{/block}
 
-		<button type="submit" class="magnify-search-button">
+		<button type="submit" class="magnify-search-button" alt-text="magnifying glass icon">
 		</button>
 		<div class="search_controls" aria-hidden="true">
 			<a href="{url page="search" op="search"}" class="headerSearchPrompt search_prompt" aria-hidden="true">
