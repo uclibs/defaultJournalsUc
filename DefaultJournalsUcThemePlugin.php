@@ -11,9 +11,12 @@
  * @class DefaultJournalsUcThemePlugin
  * @ingroup plugins_themes_default_journals uc
  *
- * @brief Default theme
+ * @brief Default journals_at_uc theme
  */
-import('lib.pkp.classes.plugins.ThemePlugin');
+namespace APP\plugins\themes\defaultJournalsUc;
+
+use PKP\plugins\ThemePlugin;
+use PKP\plugins\Hook;
 
 class DefaultJournalsUcThemePlugin extends ThemePlugin {
 	/**
@@ -87,7 +90,7 @@ class DefaultJournalsUcThemePlugin extends ThemePlugin {
 
 
     $proceedings = $this->getOption('proceedingsArray');
-    HookRegistry::register ('TemplateManager::display', array($this, 'loadTemplateData'));
+    Hook::add('TemplateManager::display', array($this, 'loadTemplateData'));
 
   }
   	public function loadTemplateData($hookName, $args) {
