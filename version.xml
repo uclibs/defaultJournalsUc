@@ -6,7 +6,6 @@
   *
   * Copyright (c) 2014-2020 Simon Fraser University
   * Copyright (c) 2003-2020 John Willinsky
-  * Copyright (c) 2021 Sean Crowe
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Plugin version information.
@@ -24,10 +23,10 @@
 	    Valid: 1.0.2.3, 0.1.4.0
 		Invalid: 1.0, v1.0.4, 1.0.0.0b
 	-->
-	<release>1.0.6.0</release>
+	<release>1.1.0.0</release>
 
 	<!-- The date of the latest version -->
-	<date>2023-06-05</date>
+	<date>2023-12-20</date>
 
 	<!-- This should always be 0 -->
 	<lazy-load>0</lazy-load>
